@@ -1,0 +1,11 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url><loc>/page.html</loc></url>
+<url><loc>/</loc></url>
+<url><loc>/posts/goals.html</loc></url>
+<url><loc>/posts/test_post.html</loc></url>
+<url><loc>/tags.html</loc></url>
+<url><loc>/tags/code.html</loc></url>
+<url><loc>/tags/dart.html</loc></url>
+<url><loc>/tags/self.html</loc></url>
+<url><loc>/tags/test.html</loc></url>
+</urlset>

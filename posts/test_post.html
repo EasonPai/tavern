@@ -1,0 +1,183 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" href="/style.css">
+
+    <script src="packages/web_components/webcomponents-lite.min.js"></script>
+
+    <style is="custom-style">
+        :root {
+            --primary-color: var(--google-blue-500);
+        }
+        paper-button {
+            background: var(--primary-color);
+            color: white;
+            --paper-button: {
+                @apply(--paper-font-common-base);
+            };
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <h1>Test Post</h1>
+    <div id="content">
+        <p><a href="https://www.reddit.com/comments/92dd8/test_post_please_ignore">test post please ignore</a></p>
+<p>This is a fake post to check out all of the different kinds of formatting that need to be styled. This paragraph uses <em>emphasis</em> and also contains a bit of <code>inline code</code>. No paragraph would be complete without a <a href="/">link</a> either.</p><div class="update">
+<p><em>Update 2011/09/9:</em> This is a fake update.</p>
+</div>
+<p>Here is a code block with the maximum code width (70 characters):</p>
+<pre><code class="language-java">         1         2         3         4         5         6         7
+1234567890123456789012345678901234567890123456789012345678901234567890
+class Parser {
+  public void register(TokenType token, PrefixParselet parselet) {
+    mPrefixParselets.put(token, parselet);
+  }
+
+  public Expression parseExpression() {
+    Token token = consume();
+    PrefixParselet prefix = mPrefixParselets.get(token.getType());
+
+    if (prefix == null) throw new ParseException(
+        "Could not parse \"" + token.getText() + "\".");
+
+    return prefix.parse(this, token);
+  }
+
+  // Other stuff...
+
+  private final Map&lt;TokenType, PrefixParselet&gt; mPrefixParselets =
+      new HashMap&lt;TokenType, PrefixParselet&gt;();
+}
+</code></pre>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus suscipit elit mattis blandit. Sed dolor metus, fermentum vitae vestibulum ut, sollicitudin at tortor. Donec ac lobortis tortor. Proin id magna nisl. Pellentesque porttitor rutrum orci non dignissim. Morbi eros tortor, ultrices id aliquet quis, commodo ut purus. Suspendisse eget nunc lacus. In id sodales tortor.</p>
+<h2>A Second Level Header</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus suscipit elit mattis blandit. Sed dolor metus, fermentum vitae vestibulum ut, sollicitudin at tortor. Donec ac lobortis tortor. Proin id magna nisl. Pellentesque porttitor rutrum orci non dignissim. Morbi eros tortor, ultrices id aliquet quis, commodo ut purus. Suspendisse eget nunc lacus. In id sodales tortor.</p>
+<h3>A Third Level Header</h3>
+<p>In metus magna, malesuada sit amet fermentum ac, porttitor ut tellus. Curabitur sit amet arcu orci. Phasellus euismod faucibus nisl nec ultricies. Nam nunc mi, porta venenatis pellentesque vitae, cursus a lectus. Morbi placerat accumsan condimentum. Pellentesque scelerisque volutpat felis a tristique.</p><ul><li>
+<p>Nulla nulla odio, tincidunt vitae dignissim non, tempus sed felis. Morbi elementum nunc sit amet ipsum imperdiet sed dignissim felis congue.</p></li><li>
+<p>Cras porttitor commodo felis sit amet adipiscing.</p><ul><li>
+<p>Praesent ut malesuada risus. Nulla ac sapien sed dolor pulvinar placerat sit amet in diam. Nulla convallis pulvinar tortor id semper.</p>
+<p>Integer ut tellus velit, vel varius justo. Phasellus et metus sed purus blandit lobortis vel non ante. Aenean nec vestibulum turpis.</p></li><li>
+<p>Phasellus vitae tortor augue, at porttitor augue. Sed placerat eleifend metus, sed lacinia ligula ullamcorper in. Integer lorem sem, rhoncus id sodales eu, tincidunt eu turpis. Nam vitae odio vitae lectus consequat euismod et vel orci. Vestibulum ligula turpis, porttitor sit amet tristique sed, scelerisque et purus. Nulla semper nibh non lacus blandit ac commodo lectus suscipit.</p></li></ul></li><li>
+<p>Morbi sagittis tortor nec velit cursus eget rhoncus purus blandit.</p></li></ul>
+<p>Let's not forget numbered lists:</p><ol><li>
+<p>Praesent ut malesuada risus.</p></li><li>
+<p>Nulla ac sapien sed dolor pulvinar placerat sit amet in diam.</p></li><li>
+<p>Nulla convallis pulvinar tortor id semper.</p><ol><li>
+<p>Integer ut tellus velit, vel varius justo.</p></li><li>
+<p>Phasellus et metus sed purus blandit lobortis vel non ante.</p></li></ol></li><li>
+<p>Aenean nec vestibulum turpis.</p></li></ol>
+<p>And now, a block quote:</p>
+<blockquote>
+<p>Phasellus vitae tortor augue, at porttitor augue. Sed placerat eleifend metus, sed lacinia ligula ullamcorper in. Integer lorem sem, rhoncus id sodales eu, tincidunt eu turpis. Nam vitae odio vitae lectus consequat euismod et vel orci. Vestibulum ligula turpis, porttitor sit amet tristique sed, scelerisque et purus. Nulla semper nibh non lacus blandit ac commodo lectus suscipit.</p></blockquote><p class="cite">Some Latin Dude</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus suscipit elit mattis blandit. Sed dolor metus, fermentum vitae vestibulum ut, sollicitudin at tortor. Donec ac lobortis tortor. Proin id magna nisl. Pellentesque porttitor rutrum orci non dignissim. Morbi eros tortor, ultrices id aliquet quis, commodo ut purus. Suspendisse eget nunc lacus. In id sodales tortor.</p>
+<h2>And Now, Let's Have a Table</h2>
+<p>This is a paragraph right before it.</p><table>
+<thead>
+<tr>
+<td class="right">Array Size</td>
+<td class="right">SortTest</td>
+<td class="right">SortTestT</td>
+<td class="right">SortTestTC</td>
+<td class="right">SortIndirect</td>
+</tr>
+</thead>
+<tr>
+<td class="right"><tt>1024</tt></td>
+<td class="right"><tt>10.7162</tt></td>
+<td class="right"><tt>2.3441</tt></td>
+<td class="right"><tt>3.8781</tt></td>
+<td class="right"><tt>1.1366</tt></td>
+</tr>
+<tr>
+<td class="right"><tt>2048</tt></td>
+<td class="right"><tt>22.9509</tt></td>
+<td class="right"><tt>4.3889</tt></td>
+<td class="right"><tt>8.4408</tt></td>
+<td class="right"><tt>1.8714</tt></td>
+</tr>
+<tr>
+<td class="right"><tt>4096</tt></td>
+<td class="right"><tt>49.3709</tt></td>
+<td class="right"><tt>8.4452</tt></td>
+<td class="right"><tt>17.3883</tt></td>
+<td class="right"><tt>3.7319</tt></td>
+</tr>
+<tr>
+<td class="right"><tt>8192</tt></td>
+<td class="right"><tt>103.5701</tt></td>
+<td class="right"><tt>18.5369</tt></td>
+<td class="right"><tt>38.1285</tt></td>
+<td class="right"><tt>8.0310</tt></td>
+</tr>
+<tr>
+<td class="right"><tt>16384</tt></td>
+<td class="right"><tt>220.9323</tt></td>
+<td class="right"><tt>39.6958</tt></td>
+<td class="right"><tt>80.9258</tt></td>
+<td class="right"><tt>18.5821</tt></td>
+</tr>
+<tr>
+<td class="right"><tt>32768</tt></td>
+<td class="right"><tt>469.5507</tt></td>
+<td class="right"><tt>84.5129</tt></td>
+<td class="right"><tt>172.2964</tt></td>
+<td class="right"><tt>41.2126</tt></td>
+</tr>
+<tr>
+<td class="right"><tt>65536</tt></td>
+<td class="right"><tt>1016.2149</tt></td>
+<td class="right"><tt>188.6718</tt></td>
+<td class="right"><tt>380.3507</tt></td>
+<td class="right"><tt>93.2924</tt></td>
+</tr>
+<tr>
+<td class="right"><tt>131072</tt></td>
+<td class="right"><tt>2156.4188</tt></td>
+<td class="right"><tt>399.7299</tt></td>
+<td class="right"><tt>791.6437</tt></td>
+<td class="right"><tt>210.9526</tt></td>
+</tr>
+<tr>
+<td class="right"><tt>262144</tt></td>
+<td class="right"><tt>4616.3540</tt></td>
+<td class="right"><tt>847.9829</tt></td>
+<td class="right"><tt>1692.9814</tt></td>
+<td class="right"><tt>467.6020</tt></td>
+</tr>
+<tr>
+<td class="right"><tt>524288</tt></td>
+<td class="right"><tt>9732.4311</tt></td>
+<td class="right"><tt>1793.9729</tt></td>
+<td class="right"><tt>3545.2089</tt></td>
+<td class="right"><tt>1038.2164</tt></td>
+</tr>
+</table>
+<p>Why not some guitar tab:</p>
+<pre><code>|12----------------------------------------------------------------------|
+|--12-8---11-8-----------11-14-17-14-----------17-20-17------17-20-16----|
+|-------9------9-------12------------15------18--------18--18--------17--|
+|----------------11-14-----------------17--20------------20------------19|
+|------------------------------------------------------------------------|
+|------------------------------------------------------------------------|
+</code></pre>
+<pre><code>|---------15-19-15------15-19-15-14---------------------14-15-17-14--|
+|-------17--------17--17-----------15----------13-15-17------------15|
+|----16-------------16----------------12-14-16-----------------------|
+|--17----------------------------------------------------------------|
+|19------------------------------------------------------------------|
+|--------------------------------------------------------------------|
+</code></pre>
+
+    </div>
+    <script type="application/dart" src="./main.dart"></script>
+    <script src="./packages/browser/dart.js"></script>
+</div>
+</body>
+</html>
